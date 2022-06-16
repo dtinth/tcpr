@@ -1,6 +1,6 @@
 {
   "name": "tcpr",
-  "version": "1.0.0",
+  "version": "1.0.0-0",
   "description": "TCP proxy using modern Node.js APIs and zero dependencies",
   "main": "tcpr.mjs",
   "bin": {
