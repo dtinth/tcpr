@@ -1,0 +1,17 @@
+{
+  "name": "tcpr",
+  "version": "1.0.0",
+  "description": "TCP proxy using modern Node.js APIs and zero dependencies",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "volta": {
+    "node": "18.4.0"
+  },
+  "engines": {
+    "node": ">=18.4.0"
+  }
+}
