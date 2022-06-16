@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { createServer, connect } from 'net'
 import { parseArgs } from 'util'
 import { pipeline } from 'stream/promises'
@@ -16,13 +17,19 @@ const { values } = parseArgs({
   allowPositionals: false,
 })
 
+const printUsage = () => {
+  console.error(`Usage: tcpr --listen [HOST]:PORT --connect HOST:PORT`)
+}
+
 if (!values.listen) {
   console.error('--listen is required')
+  printUsage()
   process.exit(1)
 }
 
 if (!values.connect) {
   console.error('--connect is required')
+  printUsage()
   process.exit(1)
 }
 
